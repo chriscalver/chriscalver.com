@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test2.css">
+    <link href='https://fonts.googleapis.com/css?family=Michroma' rel='stylesheet'>
+
+    <script src="statcity2.js" type="module"></script>
+    <!-- <script src="datetest.js" type="module"></script> -->
+
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav_checkbox">
+                <img src="strava.svg" class="stravaicon" width="50">
+                <a href="#" class="logo">
+                    <h2>StatCity</h2>
+                </a>
+                <input type="checkbox" id="tab-nav" class="tab-nav">
+                <label for="tab-nav" class="label">
+                    <div class="burger"></div>
+                    <div class="burger"></div>
+                    <div class="burger"></div>
+                </label>
+                <ul class="content_nav">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">STATS</a></li>
+
+                    <li><a href="#">4CAST</a></li>
+                    <li><a href="#">SETTINGS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="content_section">
+
+
+
+
+
+
+        <div class="container2">
+
+
+
+
+
+
+            <!-- flexbox for top left box #1 -->
+
+            <div class="item topleft">
+
+
+                <div class="">
+                    <img src="strava.png" class="stravalogo" width="150">
+                    <div class="header-text headertext">Last Activity: <span class="small-text" id="Date"></span></div>
+                    <div class="topleft-maintext">Activity Type: <span id="ActivtyType" class="small-text"></span></div>
+                    <div class="topleft-maintext">Distance: <span id="ActivityDistance" class="small-text"></span></div>
+                    <div class="topleft-maintext">Moving Time: <span id="ActivityTime" class="small-text"></span></div>
+                    <div class="topleft-maintext">Pace: <span id="Pace" class="small-text"></span></div>
+                    <div class="topleft-maintext">Avg HR: <span id="HeartRate" class="small-text"></span></div>
+
+                    <!-- <div class="flex-1">
+                        <span id="" class="flex-1-span">
+                            <a href="#" class="" >
+                                View Stats 
+                            </a>
+                        </span>
+                    </div> -->
+                </div>
+
+
+
+            </div>
+
+
+            <!-- end of box1    top left  -->
+
+
+
+
+
+            <div class="item topright">
+
+
+                <div class="">
+
+                    <img src="accuweather.png" class="accuweatherlogo" width="280">
+
+                    <div class="main-text topright-maintext">Time:
+                        <span id="Time" class="small-text"></span>
+                    </div>
+                    <div class="main-text topright-maintext">Temp:
+                        <span id="CurrentTemp" class="small-text"></span>
+                        <span class="degrees">°</span>
+                        <span class="small-text">C</span>
+                    </div>
+
+                    <div class="conditions">
+                        <span id="WeatherDetails" class="details-text"></span>
+                    </div>
+
+                    <img id="WeatherIcon" src="" class="weathericon" width="70">
+
+                    <div class="main-text topright-maintext">
+                        <!-- <span id="" class="small-text">
+                            <a href="#" class="">
+                                View forecast
+                            </a>
+                        </span> -->
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+            <div class="item middleleft">
+
+                <div class="">
+
+                    <div class="header-text middleleftheadertext">This week:
+                        <span class="small-text" id="ActNum"> </span>
+                    </div>
+                    
+                    
+
+                    <div class="middleleft-maintext">Runs:
+                        <span class="small-text" id="">(</span>                        
+                        <span class="small-text" id="RunNum"></span>
+                        <span class="small-text" id="">)</span>
+                    </div> 
+                    <div class="">
+                        <span class="middleleft-maintext" id="RunKms"></span>
+                        <span class="small-text" id="">kms</span>
+                    </div>
+
+                    <div class="middleleft-maintext">Rides:
+                        <span class="small-text" id="">(</span>                        
+                        <span class="small-text" id="RideNum"></span>
+                        <span class="small-text" id="">)</span>
+                    </div> 
+                    <div class="">
+                        <span class="middleleft-maintext" id="RideKms"></span>
+                        <span class="small-text" id="">kms</span>
+                    </div>
+                   
+
+
+                </div>
+
+
+                <!-- <div class="flex-1">
+                        <span id="" class="flex-1-span">
+                            <a href="#" class="">
+                                View Stats
+                            </a>
+                        </span>
+                    </div> -->
+            </div>
+
+
+            <div class="middleright">           
+
+
+
+                <div class="">
+
+                    <div class="middleright-maintext">12hr Forecast:
+                        <span class="small-text" id=""></span>
+                    </div>
+                    
+                    <select size="5" class="selectbox">
+                        <option id="Hour0" value="1">Item #1</option>
+                        <option id="Hour1" value="2">Item #2</option>
+                        <option id="Hour2" value="3">Item #3</option>
+                        <option id="Hour3" value="4">Item #4</option>
+                        <option id="Hour4" value="5">Item #5</option>
+                        <option id="Hour5" value="6">Item #6</option>
+                        <option id="Hour6" value="7">Item #7</option>
+                        <option id="Hour7" value="8">Item #7</option>
+                        <option id="Hour8" value="9">Item #7</option>
+                        <option id="Hour9" value="10">Item #7</option>
+                        <option id="Hour10" value="7">Item #7</option>
+                        <option id="Hour11" value="7">Item #7</option>
+
+                    </select>
+
+                    <!-- <div class="middleright-maintext">                                                
+                        <span class="small-text" id="Hour0"></span>                       
+                    </div> 
+                    <div class="middleright-maintext">                                                
+                        <span class="small-text" id="Hour1"></span>                       
+                    </div> 
+                    <div class="middleright-maintext">                                                
+                        <span class="small-text" id="Hour2"></span>                       
+                    </div> 
+                    <div class="middleright-maintext">                                                
+                        <span class="small-text" id="Hour3"></span>                       
+                    </div> 
+                    <div class="middleright-maintext">                                                
+                        <span class="small-text" id="Hour4"></span>                       
+                    </div> 
+                    <div class="middleright-maintext">                                                
+                        <span class="small-text" id="Hour5"></span>                       
+                    </div> 
+                    <div class="middleright-maintext">                                                
+                        <span class="small-text" id="Hour6"></span>                       
+                    </div> 
+                    <div class="middleright-maintext">                                                
+                        <span class="small-text" id="Hour7"></span>                       
+                    </div>  -->
+              
+                                      
+
+
+                </div>
+
+
+            </div>
+            <div class="item-5">5</div>
+            
+        </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
